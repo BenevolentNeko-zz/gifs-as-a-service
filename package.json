@@ -1,0 +1,38 @@
+{
+  "name": "gifs-as-a-service",
+  "version": "0.0.1",
+  "description": "Generates parameter based gifs",
+  "main": "index.js",
+  "dependencies": {
+    "canvas": "^1.6.5",
+    "gifencoder": "^1.0.6",
+    "koa": "^2.2.0",
+    "koa-router": "^7.1.1",
+    "koa-send": "^4.1.0",
+    "letters": "0.0.2",
+    "png-file-stream": "^1.0.0",
+    "text-to-image": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "npm run clean && node . --harmony",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf tmp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenevolentNeko/gifs-as-a-service.git"
+  },
+  "keywords": [
+    "gifs",
+    "service",
+    "image",
+    "meme"
+  ],
+  "author": "Adam Darts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenevolentNeko/gifs-as-a-service/issues"
+  },
+  "homepage": "https://github.com/BenevolentNeko/gifs-as-a-service#readme"
+}
