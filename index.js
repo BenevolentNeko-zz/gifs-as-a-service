@@ -17,12 +17,13 @@ function getGif(shortcut, full){
     if (!fs.existsSync(tempDir)){
         fs.mkdirSync(tempDir);
     }
-    let width = 400;
-    let height = 20;
+    const letterHeight = 16;
+    const width = 16 * Math.max(shortcut.length, full.length);
+    const height = 16 * 1.25;
 
     const options = {
         maxWidth: width,
-        fontSize: height*0.8,
+        fontSize: letterHeight,
         lineHeight: height,
         margin: 10,
         bgColor: "#000000",
